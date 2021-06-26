@@ -1,39 +1,60 @@
 .App {
-  text-align: center;
+	margin-top: 40px;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-container {
+	display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.weekly-weather-days-list {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.today-weather {
+    width: 25%;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.today-weather .h3-title {
+	margin-bottom: 40px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.today-weather .temp {
+	font-size: 28px
+}
+
+.today-weather .feels-like {
+	font-size: 20px
+}
+
+.weekly-weather {
+	width: 75%;
+}
+
+.weekly-weather .daily-weather {
+	margin: 0 10px;
+}
+
+.h3-title {
+	font-size: 32px;
+    margin: 0px;
+}
+
+.temp {
+	font-size: 20px;
+    margin: 10px auto;
+}
+
+.weekly-weather .daily-weather .temp {
+	font-size: 18px;
+}
+
+.feels-like {
+	font-size: 16px;
+}
+
+.daily-weather .day {
+	font-size: 18px;
 }
