@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+h1 {
+	font-size: 42px;
+    margin-bottom: 60px;
+}
+
 .weather-container {
 	display: flex;
 }
