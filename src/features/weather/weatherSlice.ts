@@ -29,7 +29,7 @@ export const getWeather = createAsyncThunk(
 	async () => {
 		const { lat, lon } = kharkivCoords;
 
-		const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid={token}`);
+		const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=token`);
 		return response.json();
 	}
 );

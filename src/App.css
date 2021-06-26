@@ -5,11 +5,12 @@
 
 h1 {
 	font-size: 42px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .weather-container {
 	display: flex;
+	flex-direction: column;
 }
 
 .weekly-weather-days-list {
@@ -19,11 +20,7 @@ h1 {
 }
 
 .today-weather {
-    width: 25%;
-}
-
-.today-weather .h3-title {
-	margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .today-weather .temp {
@@ -32,14 +29,6 @@ h1 {
 
 .today-weather .feels-like {
 	font-size: 20px
-}
-
-.weekly-weather {
-	width: 75%;
-}
-
-.weekly-weather .daily-weather {
-	margin: 0 10px;
 }
 
 .h3-title {
